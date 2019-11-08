@@ -18,4 +18,4 @@ jobs:
         KEY: ${{ secrets.KEY }}
       with:
         source: "./*"
-        target: "/usr/sideproject/udemykubernetesSEC8"
+        target: "/usr/sideproject/udemykubernetes"
