@@ -13,9 +13,7 @@ after_success:
   - docker build -t verticalambition/multi-nginx ./nginx
   - docker build -t verticalambition/multi-server ./server
   - docker build -t verticalambition/multi-worker ./worker
-  # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  # Take those images and push them to docker hub
   - docker push verticalambition/multi-client
   - docker push verticalambition/multi-nginx
   - docker push verticalambition/multi-server
